@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+h4 {
+    color: #1CC343;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, .4), rgb(0, 0, 0, .4)), url(../img/8018766.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    column-gap: #fff;
+}
+
+.navbar-brand {
+    height: 100px;
+    padding-top: 0;
+}
+
+.navbar-default .navbar-nav {
+    padding-top: 2rem;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.banner {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.banner h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.highlight {
+    color: #1CC343;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    font-size: 1.6rem;
+    background-color: #1CC343;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid #1CC343;
+    color: #1CC343;
+}
+
+.about-us,
+.services,
+main,
+.download,
+.blog {
+    margin-top: 10rem;
+}
+
+.services .col-lg-12 {
+    margin-bottom: 4rem;
+}
+
+.services .col-lg-4 {
+    position: relative;
+}
+
+.services .img,
+.blog .img {
+    overflow: hidden;
+}
+
+.services img,
+.blog img {
+    transition: all .4s ease;
+}
+
+.services img:hover,
+.blog img:hover {
+    scale: 1.1;
+}
+
+.services h3 {
+    color: #1CC343;
+    box-shadow: 0 2px 10px 0 gainsboro;
+    margin-top: 0;
+    padding: 2rem;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background: linear-gradient(rgb(0, 0, 0, .4), rgb(0, 0, 0, .4)), url(../img/friends-having-fun-while-playing-poker.jpg);
+    background-size: cover;
+    background-position: bottom bottom;
+    position: relative;
+}
+
+.youtube-video {
+    display: none;
+    position: absolute;
+    top: 10%;
+}
+
+.fa-close {
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.fa-play {
+    margin: 0 auto;
+    margin-top: 17%;
+    position: relative;
+    font-size: 2.2rem;
+    padding-left: 7px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1CC343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-play::after {
+    content: "";
+    border: 15px solid #1CC343;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    right: -18px;
+    top: -18px;
+    bottom: -20px;
+    animation: play-btn 1.2s ease-in-out infinite;
+}
+
+@keyframes play-btn {
+    0% {
+        transform: scale(.7);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blog .item {
+    margin-top: 2rem;
+}
+
+.blog img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.download {
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, .4), rgb(0, 0, 0, .4)), url(../img/royal-flush-playing-card-casino-chips-green-poker-background.jpg);
+    background-size: cover;
+}
+
+.download .col-lg-6 {
+    padding-top: 15rem;
+}
+
+.download .col-lg-6 h2 {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10rem 0 5rem 0;
+}
+
+footer span {
+    display: block;
+    line-height: 3rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+footer i {
+    width: 40px;
+    height: 40px;
+    background: #1CC343;
+    border: none;
+    margin-right: .7rem;
+    padding: 1.3rem;
+    transition: all .4s ease;
+    border-radius: 100%;
+}
+
+footer i:hover {
+    border: 1px solid #1CC343;
+    color: #1CC343;
+    background: none;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@media (max-width:991px) {
+    footer {
+        text-align: center;
+    }
+    .fa-play {
+        margin-top: 24%;
+    }
+    .navbar-brand {
+        height: 70px;
+    }
+    .navbar-default .navbar-nav {
+        padding-top: 0.5rem;
+    }
+}
+
+@media (max-width:778px) {
+    .blog .item {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .fa-play {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-brand {
+        height: 100px;
+    }
+    .navbar-toggle {
+        background-color: #fff;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin: 0px -15px;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #000;
+    }
+    .nav>li {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .navbar-default .navbar-toggle {
+        margin-top: 2.5rem;
+    }
+    .navbar-default .navbar-nav {
+        padding-top: 0rem;
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .fa-play {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width:500px) {
+    .fa-play {
+        margin-top: 50%;
+    }
+}
+
+@media (max-width:425px) {
+    .fa-play {
+        margin-top: 55%;
+    }
+}
+
+@media (max-width:411px) {
+    .banner h1 {
+        font-size: 6rem;
+    }
+    .download .col-lg-6 h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:385px) {
+    .fa-play {
+        margin-top: 60%;
+    }
+}
+
+@media (max-width:325px) {
+    .fa-play {
+        margin-top: 60%;
+    }
+    .navbar-brand {
+        height: 80px;
+    }
+    .navbar-default .navbar-toggle {
+        margin-top: 2rem;
+    }
+}
